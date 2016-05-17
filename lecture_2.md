@@ -16,7 +16,7 @@ View是通用的，但是同时View也需要Controller知道哪里被点击了�
 
 
 
-![](MVC_model.png)
+![](images/MVC_model.png)
 
 
 target - action = @IBAction .... 告知I was touched
@@ -32,7 +32,7 @@ Model是UI independent, Model 的 data变化，比如model是代表internet 某�
 
 **一个MVC一般控制一个屏幕。**
 
-![](multi-mvc.png)
+![](images/multi-mvc.png)
 
 一个MVC serve as part of view as other MVC.
 
