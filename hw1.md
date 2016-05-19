@@ -1,21 +1,3 @@
-#Learing Swift with Stanford CS193P Course.
-
-
-[Lecture 1 code][id1]
-
-[id1]:https://github.com/KrisYu/CS193P_iOS9/tree/master/Calculater_l1 
-
-[Lecture 1 notes][id2]
-
-[id2]:https://github.com/KrisYu/CS193P_iOS9/blob/master/lecture_1.md
-
-
-[lecture 2 code][id3]
-
-[id3]: https://github.com/KrisYu/CS193P_iOS9/tree/master/Calculater_l2
-
- 
-
 第一次作业：
 
 *  1 demo √
@@ -56,6 +38,4 @@ Random 代入 Constant 不对，每次都一样，所以为Random写一个单独
 * 5 description String 
 * 6 isPartialResult Bool
 * 7 UILabel led to what is showing in the display
-* 8 C button to clear √
-
-
+* 8 C button to clear √ 有待改进
