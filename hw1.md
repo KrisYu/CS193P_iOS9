@@ -36,6 +36,18 @@ Random 代入 Constant 不对，每次都一样，所以为Random写一个单独
 
 
 * 5 description String 
+
+
 * 6 isPartialResult Bool
+
+首先，默认isPartialResult是false，除非当有binaryOperator出现，才会出现其为true的状况，所以设置这个变量必定只有BinaryOperation有关。
+
+而当并未输入这个binary Operation的时候，当这个是false的时候，我们的第一个operand设置成功的时候我们的description就已经完成
+
+
+
 * 7 UILabel led to what is showing in the display
-* 8 C button to clear √ 有待改进
+
+以上三个东西紧密相连，我也是参考别人的答案才写出来的，自己理一理还是没理出来。
+
+* 8 C button to clear 

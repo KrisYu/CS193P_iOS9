@@ -35,9 +35,9 @@
 *  2 floating number input √
 * 3 more operations buttons 至少加起来12个 √
 * 4 The buttons must arrange themselves nicely in portrait and landscape modes on all iPhones , Use color to make your UI look nice √ Use color是做了，look nice并没有做到 
-* 5 description String 
-* 6 isPartialResult Bool
-* 7 UILabel led to what is showing in the display
+* 5 description String √
+* 6 isPartialResult Bool √
+* 7 UILabel led to what is showing in the display √
 * 8 C button to clear √
 
 

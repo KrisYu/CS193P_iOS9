@@ -57,15 +57,16 @@ class ViewController: UIViewController {
         }
         displayValue = brain.result
         
+        formula.text = brain.description
+        if formula.text == " " {return}
+        if brain.isPartialResult == true {
+            formula.text! += "..."
+        } else {
+            formula.text! += " ="
+        }
+        
+        print(brain.description)
     }
-    
-    @IBAction func clearButton(sender: UIButton) {
-        display.text = String(0)
-        formula.text = " "
-        brain.setOperand(0)
-        userIsInTheMiddleOfTyping = false
-    }
-    
     
 
 }

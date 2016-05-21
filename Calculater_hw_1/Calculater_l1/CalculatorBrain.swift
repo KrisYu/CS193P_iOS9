@@ -12,8 +12,15 @@ class CalculatorBrain {
     
     private var accumulator = 0.0
     
+    var description = " "
+    var isPartialResult = false
+    
+
     func setOperand(operand: Double){
         accumulator = operand
+        if isPartialResult == false {
+            description = String(format: "%g",accumulator)
+        }
     }
     
     private var operations: Dictionary<String,Operation> = [
@@ -29,7 +36,8 @@ class CalculatorBrain {
         "÷" : Operation.BinaryOperation({$0 / $1}),
         "+" : Operation.BinaryOperation({$0 + $1}),
         "−" : Operation.BinaryOperation({$0 - $1}),
-        "=" : Operation.Equals
+        "=" : Operation.Equals,
+        "C" : Operation.Clear
     ]
     
     private enum Operation {
@@ -38,6 +46,7 @@ class CalculatorBrain {
         case BinaryOperation((Double,Double) -> Double)
         case Random
         case Equals
+        case Clear
     }
     
     
@@ -47,34 +56,64 @@ class CalculatorBrain {
             switch operation {
             case .Constant (let value):
                 accumulator = value
-
+                if isPartialResult == true {
+                    description += symbol
+                    isPartialResult = false
+                } else {
+                    description = symbol
+                }
             case .UnaryOperation (let function) :
                 accumulator = function(accumulator)
+                if isPartialResult == true {
+                    description += symbol + String(format: "%g",accumulator)
+                    isPartialResult = false
+                } else {
+                    description = symbol + "(\(description))"
+                }
             case .BinaryOperation (let function) :
                 executePendingBinaryOperation()
                 pending = PendingBinaryOperationInfo(binaryFunction: function, firstOperand: accumulator)
+                description += " " + symbol + " "
+                isPartialResult = true
             case .Random :
                 srand48(Int(arc4random()))
                 accumulator = drand48()
+                if isPartialResult == true {
+                    description += symbol
+                    isPartialResult = false
+                } else {
+                    description = symbol
+                }
             case .Equals :
                 executePendingBinaryOperation()
+            case .Clear:
+                clear()
             }
         }
     }
     
     private func executePendingBinaryOperation(){
+        if  isPartialResult == true {
+            description += String(format: "%g",accumulator)
+            isPartialResult = false
+        }
         if pending != nil {
             accumulator = pending!.binaryFunction(pending!.firstOperand, accumulator)
             pending = nil
         }
     }
     
+    private func clear(){
+        accumulator = 0.0
+        pending = nil
+        isPartialResult = false
+        description = " "
+    }
+    
+    
     private var pending: PendingBinaryOperationInfo?
     
-    //the sequence of operands and operations that led to the value returned by result
-    var description: String = ""
-    var isPartialResult: Bool = false
-    
+
 
     
     
