@@ -41,3 +41,11 @@
 * 8 C button to clear √
 
 
+
+[lecture 3 code][id5]
+
+[id5]: https://github.com/KrisYu/CS193P_iOS9/tree/master/Calculater_l3
+
+[lecture 3 notes][id6]
+
+[id6]:https://github.com/KrisYu/CS193P_iOS9/blob/master/lecture_3.md
