@@ -193,7 +193,37 @@ init是有免费的，但是一旦自己提供init，则免费的init就没有�
 听起来好复杂的样子，晕了要
 
 #### AnyObject 
-id
+
+貌似OC id的Swift版本，然后好处是当不知道是啥的时候拿来用，然后用as转化成我们想要的格式.
+
+
+#### Property List
+
+大杂炖，大混杂
+
+#### NSUserDefaults
+
+small database
+
+用来存plist，就是一些简单的用户设置
+
+	
+	 let defaults = NSUserDefaults.standardUserDefaults()
+	 	  let plist = defaults.objectForKey(“foo”)	  defaults.setObject(plist, forKey: “foo”)
+
+
+
+#### Cast
+
+Type Cast，还算常见 Int啥的
+
+
+更常见的Cast比如Cast ViewController 
+
+#### Assertion
+
+
+
 
 
 
