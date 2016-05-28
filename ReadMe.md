@@ -49,3 +49,18 @@
 [lecture 3 notes][id6]
 
 [id6]:https://github.com/KrisYu/CS193P_iOS9/blob/master/lecture_3.md
+
+#### 第二次作业
+
+完全基本不会，准备digest[此处的做法][id0]
+
+[id0]:https://github.com/MichelDeiman/StanfordCS193P2016-Calculator-II
+
+[lecture 4 code][id7]
+
+[id7]: https://github.com/KrisYu/CS193P_iOS9/tree/master/FaceIt
+
+[lecture 4 notes][id8]
+
+[id8]:https://github.com/KrisYu/CS193P_iOS9/blob/master/lecture_4.md
+
