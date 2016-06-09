@@ -95,7 +95,7 @@ enum Op {
 - 继承（class）
 - value type（struct， enum） vs reference type(class)
 
-mutate func 这样才可以改变 struct/ enum
+**mutate func 这样才可以改变 struct/ enum**
 
 基本一般class prefer than struct，因为是OOP。Struct用于更基础的type，比如string, double ,int ,arrays, dictionarys , 同样还用于drawing， points, rectangles.
 
@@ -107,6 +107,9 @@ mutate func 这样才可以改变 struct/ enum
 - final subclass没法override
 - types/instances 可以有methods/properties 
 
+##### instance propery vs Class property
+
+
 For this example, lets consider using the struct Double (yes, Double is a struct)  
 ```  var d: Double = ...  if d.isSignMinus {      d = Double.abs(d)}
 ```isSignMinus is an instance property of a Double (you send it to a particular Double)
@@ -117,7 +120,7 @@ For this example, lets consider using the struct Double (yes, Double is a struct
 
 #### properties
 
-Property Observers 是非常神奇的存在.
+Property Observers 是非常神奇的存在，正如之前所写，依旧感觉神奇.
 
 willSet 和 didSet 用来update UI
 
@@ -176,6 +179,9 @@ OC用
 
 	let n = NSNumber(35.5)
 	let intversion: Int  = n.intValue
+	
+要知道这个是因为系统提供的API，里面的一些数据就是NSNumber,对于我们，如果需要使用可能涉及类型转换，比如尝试来读系统的pedometer步数，就是NSNumber.
+
 
 #### NSDate
 
@@ -190,7 +196,11 @@ a bag of bits
 
 init是有免费的，但是一旦自己提供init，则免费的init就没有了.
 
-听起来好复杂的样子，晕了要
+听起来好复杂的样子
+
+
+所以就是比如对于一个class，如果一旦开始写init就一定要写对么。
+
 
 #### AnyObject 
 
@@ -212,6 +222,8 @@ small database
 	 	  let plist = defaults.objectForKey(“foo”)	  defaults.setObject(plist, forKey: “foo”)
 
 
+这个之后绝对会见到
+
 
 #### Cast
 
@@ -221,6 +233,8 @@ Type Cast，还算常见 Int啥的
 更常见的Cast比如Cast ViewController 
 
 #### Assertion
+
+跟别的语言Assertion一样，debug使用
 
 
 

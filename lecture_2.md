@@ -2,7 +2,7 @@
 
 #### MVC
 
-MVC一定是跨不去的槛，Model-View—Controller.非常make sense的架构。
+MVC一定是跨不去的槛，Model - View - Controller.非常make sense的架构。
 一直在讲分层分层，分层的好处就是每一层是分开的，然后写另一层尽量就不会那么影响其他层，分层写，那么每一层都显得方便改动。
 
 * Model  - 这个App是咋回事，就是自己心中有个数，怎样构建model，比如一个简单的contacts App，Person是一个类，存储怎么存，这就是model, more about the data and algorthim.
@@ -34,8 +34,7 @@ Model是UI independent, Model 的 data变化，比如model是代表internet 某�
 
 ![](images/multi-mvc.png)
 
-一个MVC serve as part of view as other MVC.
-
+一个MVC serve as part of view as other MVC， 同时，一个MVC是别的MVC的部分.
 
 #### 各种 property
 
@@ -57,6 +56,9 @@ willSet, didSet
 
 lazy property 和有getter 和 setter 的property不能有observer.
 
+
+
+
 ##### type property 
 
 就是别的static property
@@ -67,6 +69,8 @@ lazy property 和有getter 和 setter 的property不能有observer.
 
 
 computed property还是让我觉得非常的神奇，因为它就这么申请的把display显示的值变成了Double，并且还能成功set它。非常之神奇，神奇宝贝。特别上到π/square root那里，就神奇的展示出来了。
+
+**Computed property 以及 property observers 真是非常重要，因为可以看到之后的Demo时常出现，而用起他们也是大有妙招.**
 
 这里的计算应该放到model里面
 
@@ -141,7 +145,7 @@ pass by value ： array， double， int ，string 都是pass by value的，arra
 
 
 甚至还来了AutoLayout的constraint部分.
-这速度简直了.
+这就是第二课，速度简直了.
 
 
 
