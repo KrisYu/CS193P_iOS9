@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:ScrollView.xcodeproj">
+      location = "self:/Users/XueYu/Developer/CS193P_iOS9/Calculater_hw_2/Calculater_hw_2.xcodeproj">
    </FileRef>
 </Workspace>

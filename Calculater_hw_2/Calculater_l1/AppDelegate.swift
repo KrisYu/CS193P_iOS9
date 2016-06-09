@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  ScrollView
+//  Calculater_l1
 //
-//  Created by 雪 禹 on 6/7/16.
+//  Created by 雪 禹 on 5/14/16.
 //  Copyright © 2016 XueYu. All rights reserved.
 //
 

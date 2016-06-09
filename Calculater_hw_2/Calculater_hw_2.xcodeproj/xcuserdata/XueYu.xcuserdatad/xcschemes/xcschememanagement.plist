@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>ScrollView.xcscheme</key>
+		<key>Calculater_l1.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,7 +12,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>C8C233341D07591B00BB0C3B</key>
+		<key>C854037C1CE8210F007BBE1B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
