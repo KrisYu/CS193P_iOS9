@@ -17,7 +17,7 @@
 
 
  
-比如其实tableview应该用哪个？然后是该用master-detail view.
+比如其实tableview应该用哪个？然后是该更多用master-detail view么？
 
 
 **Segues always create a new instance of an MVC,This is important to understand.**
@@ -96,6 +96,21 @@ override func viewDidLoad() {	super.viewDidLoad() // always let super have a ch
 
 
 	func viewDidAppear(animated: Bool)
+	
 Animation
 以前我都是把一切写在 viewDidLoad中的，直到一天，写一个UIPageView玩，scroll的时候不太对。
-所以最终发现了这个lifecycle原来有这么多方法.
+所以最终发现了这个lifecycle原来有这么多方法.
+
+而对应的，合适的方法就该写合适的代码.
+
+
+#### Demo
+
+最后用一个Swift的Extension展示了它的各个阶段,真的是OOP,因为生成的都是instance.所以真心都是class，生成的都是instance，比如segue也是这样.生成的不是原来的instance，而是这个viewcontroller的一个instance.
+
+高级.
+
+
+
+
+

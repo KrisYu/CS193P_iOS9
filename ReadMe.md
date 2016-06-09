@@ -58,9 +58,26 @@
 
 [lecture 4 code][id7]
 
-[id7]: https://github.com/KrisYu/CS193P_iOS9/tree/master/FaceIt
+[id7]: https://github.com/KrisYu/CS193P_iOS9/tree/master/FaceIt_l4
 
 [lecture 4 notes][id8]
 
 [id8]:https://github.com/KrisYu/CS193P_iOS9/blob/master/lecture_4.md
 
+
+[lecture 5 code][id9]
+
+[id9]: https://github.com/KrisYu/CS193P_iOS9/tree/master/FaceIt_l5
+
+[lecture 5 notes][id10]
+
+[id10]:https://github.com/KrisYu/CS193P_iOS9/blob/master/lecture_5.md
+
+
+[lecture 6 code][id11]
+
+[id11]: https://github.com/KrisYu/CS193P_iOS9/tree/master/FaceIt_l6
+
+[lecture 6 notes][id12]
+
+[id12]:https://github.com/KrisYu/CS193P_iOS9/blob/master/lecture_6.md
