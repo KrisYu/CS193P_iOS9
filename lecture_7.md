@@ -200,7 +200,7 @@ delegate则是我代表你，比如一个ViewController代表一个View来接收
 - tap to show navigation bar
 
 
-![](ScrollView.gif =200x)
+![](https://github.com/KrisYu/CS193P_iOS9/blob/master/ScrollView.gif?raw=true)
 
 
 
@@ -234,6 +234,9 @@ delegate则是我代表你，比如一个ViewController代表一个View来接收
         imageURL = NSURL(string: DemoURL.Stanford)
 
 URL是classes，所以这里的方法是，这个把string转成NSURL
+
+终于进入plist
+
 
 (http://) 原来是不可以随意调用的啊.
 	
