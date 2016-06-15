@@ -10,4 +10,4 @@
 
 首先对于touchDigit这个函数，因为digit是一定有值的，所以unwrap合理.
 
-学到了一个有关label的小技巧，自动调大小，that is -> autoshrink.
+学到了一个有关label的小技巧，自动调大小。
