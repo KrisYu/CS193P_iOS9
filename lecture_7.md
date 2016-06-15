@@ -208,11 +208,18 @@ delegate则是我代表你，比如一个ViewController代表一个View来接收
 
     var imageURL: NSURL?
 
-这一句就是model了,因为系统要求很简单，就是创建一个imageView，然后用image来填。
+这一句就是model了,因为系统要求很简单，就是创建一个imageView，然后用image来填。然后这个URL也很强大，可以是各种。
+
+**老师说的这句话很好，whenerver you created a ViewController，要想到它的Model.
+**
+
+	private var imageView = UIImageView()
+	
+	
 
 对于`private var image: UIImage?` 老师也说了，是kill two birds with one stone.
 
-还真是，因为一方面set的时候就把imageView的image给改变了,同时改变imageView的size，老师说这事一个computed var，因为它把自己的变量存在了imageVIew的image里.
+还真是，因为一方面set的时候就把imageView的image给改变了,同时改变imageView的size，老师说这事一个computed var，把数据存在别处，把自己的变量存在了imageVIew的image里.
 
 
     private var image : UIImage? {
@@ -246,6 +253,11 @@ URL是classes，所以这里的方法是，这个把string转成NSURL
 
 
 
-scrollView讲解的时候又是故意没有设置size，犯错来提醒大家。
+scrollView讲解的时候又是故意没有设置scrollView 的 size，犯错来提醒大家。
+
+
+这里写的真是一环扣一环，在这个例子是绝了，可以借鉴，不过也要考虑别的状况是否适合这么写.
+
 
 然后非常期待lecture 8.
+
