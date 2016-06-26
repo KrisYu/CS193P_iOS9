@@ -39,7 +39,6 @@ class TweetTableViewController: UITableViewController,UITextFieldDelegate {
     private func searchForTweets(){
         if let request = twitterRequest {
             lastTwitterRequest = request
-            
             request.fetchTweets{ [weak weakSelf = self] newTweets in
                 dispatch_async(dispatch_get_main_queue()){
                     if request == weakSelf?.lastTwitterRequest {
@@ -47,8 +46,11 @@ class TweetTableViewController: UITableViewController,UITextFieldDelegate {
                             weakSelf?.tweets.insert(newTweets, atIndex: 0)
                         }
                     }
+                    weakSelf?.refreshControl?.endRefreshing()
                 }
             }
+        } else {
+            self.refreshControl?.endRefreshing()
         }
     }
     
@@ -94,6 +96,11 @@ class TweetTableViewController: UITableViewController,UITextFieldDelegate {
         textField.resignFirstResponder()
         searchText = textField.text
         return true
+    }
+    
+    
+    @IBAction func refresh(sender: UIRefreshControl) {
+        searchForTweets()
     }
 
     /*

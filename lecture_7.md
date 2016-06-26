@@ -251,6 +251,7 @@ URL是classes，所以这里的方法是，这个把string转成NSURL
 	App AllowsArbitraryLoads -> YES
 
 
+然后再增加scrollView.
 
 
 scrollView讲解的时候又是故意没有设置scrollView 的 size，犯错来提醒大家。

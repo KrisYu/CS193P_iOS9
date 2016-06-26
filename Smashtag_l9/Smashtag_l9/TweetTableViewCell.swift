@@ -43,7 +43,7 @@ class TweetTableViewCell: UITableViewCell {
             tweetScreenNameLabel?.text = "\(tweet.user)" //tweet.user
             
             if let profileImageURL = tweet.user.profileImageURL {
-                if let imageData = NSData(contentsOfURL : profileImageURL){
+                if let imageData = NSData(contentsOfURL : profileImageURL){ // blocks main thread!
                     tweetProfileImageView?.image = UIImage(data: imageData)
                 }
             }
